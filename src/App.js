@@ -1,23 +1,18 @@
 import logo from './logo.svg';
-import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css'
+import {Button} from 'react-bootstrap'
+import './App.css'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div align="center">
+        <h3 className='titre'>CV INDEXATION WITH ELK</h3>
+        <tr>
+              <td><Button variant="primary" href={process.env.REACT_APP_LINK1}>Upload</Button></td>
+              <td><Button variant="primary" href={process.env.REACT_APP_LINK2}>Search</Button></td>
+        </tr>
+      </div>
     </div>
   );
 }
